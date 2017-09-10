@@ -22,4 +22,4 @@ function emojifyPhrase(str, emoji) {
         : `Sorry, message is ${emojified.length} characters, but must be within ${maxLength} characters!`;
 }
 
-console.log(emojifyPhrase('idgaf', 'middle_finger'));
+console.log(emojifyPhrase('cool', 'sunglasses'));
