@@ -2,4 +2,4 @@
 
 Spits out a visual representation of the inputted phrase with your emoji of choice:
 
-![cool](https://github.com/alightedlamp/emojify-phrase/cool.png)
+![cool](https://github.com/alightedlamp/emojify-phrase/blob/master/cool.png)
