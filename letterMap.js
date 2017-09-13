@@ -1,12 +1,7 @@
 // Characeters are 5x7 blocks
 const letterMap = {
-    '_': ["sssss",
-        "sssss",
-        "sssss",
-        "sssss",
-        "sssss"],
     A: ["ssxss",
-        "xxsxx",
+        "sxsxs",
         "xsssx",
         "xxxxx",
         "xsssx"],
@@ -75,11 +70,11 @@ const letterMap = {
         "xsxsx",
         "xssxx",
         "xsssx"],
-    O: ["sxxxs",
+    O: ["xxxxx",
         "xsssx",
         "xsssx",
         "xsssx",
-        "sxxxs"],
+        "xxxxx"],
     P: ["xxxxs",
         "xsssx",
         "xxxxs",
@@ -95,11 +90,11 @@ const letterMap = {
         "xxxxs",
         "xssxs",
         "xsssx"],
-    S: ["sxxxs",
+    S: ["xxxxs",
         "xssss",
         "sxxxs",
         "ssssx",
-        "xxxxs"],
+        "xxxxx"],
     T: ["xxxxx",
         "ssxss",
         "ssxss",
@@ -134,7 +129,18 @@ const letterMap = {
         "sssxs",
         "ssxss",
         "sxsss",
-        "xxxxx"]
+        "xxxxx"],
+    // Punctuation
+    '_': ["sss",
+        "sss",
+        "sss",
+        "sss",
+        "sss"],
+    '!': ["ssxss",
+        "ssxss",
+        "ssxss",
+        "sssss",
+        "ssxss"]
 };
 
 module.exports = letterMap;

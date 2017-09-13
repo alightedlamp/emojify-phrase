@@ -8,9 +8,8 @@ function emojifyPhrase(str, emoji) {
     const spacer = ' '.repeat(6);
 
     const replaceChars = (layer) => layer.replace(/[s]/g, spacer).replace(/[x]/g, `:${emoji}:`);
-    let emojified = [...str]
-        .map(char => letterMap[char.toUpperCase()]
-            .map(layer => replaceChars(layer), []));
+    let emojified = [...str].map(char => letterMap[char.toUpperCase()]
+                            .map(layer => replaceChars(layer), []));
 
     for (let i = 1; i < emojified.length; i++) {
         for (let j = 0; j < emojified[i].length; j++) {
@@ -19,7 +18,8 @@ function emojifyPhrase(str, emoji) {
     }
     return emojified.length < maxLength
         ? emojified[0].join('\n')
-        : `Sorry, message is ${emojified.length} characters, but must be within ${maxLength} characters!`;
+        : `Sorry, message is ${emojified.length} characters, \
+           but must be within ${maxLength} characters!`;
 }
 
-console.log(emojifyPhrase('cool', 'sunglasses'));
+console.log(emojifyPhrase('art', 'art'));
